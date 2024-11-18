@@ -17,7 +17,7 @@ jobs:
           POSTGRES_PASSWORD: django_password
           POSTGRES_DB: django_db
         ports:
-          5432:5432
+          - 5432:5432
         options: >-
           --health-cmd pg_isready
           --health-interval 10s
